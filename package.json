@@ -8,7 +8,9 @@
     "loadTorrent": "node loadTorrent.js",
     "categorize": "node categorize.js",
     "classifier": "node classifier.js",
-    "trainer": "node trainer.js"
+    "trainer": "node trainer.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "aria2": "^3.0.0",
@@ -21,9 +23,11 @@
     "mongoose": "^4.6.5",
     "natural": "^0.4.0",
     "read-torrent": "^1.3.0",
-    "redis": "^2.6.2"
+    "redis": "^2.6.2",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "heapdump": "~0.3.7"
-  }
+  },
+  "snyk": true
 }
